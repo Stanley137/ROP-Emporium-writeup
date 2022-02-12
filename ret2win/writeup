@@ -1,0 +1,4 @@
+Read the question, and use pwntools to analyze the file, 
+objdump can see the ret2win func
+elf.sym['ret2win'] -> reture_address
+get the flag
