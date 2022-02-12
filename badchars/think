@@ -1,0 +1,8 @@
+In this challenge, some bytes would not be load, so we must use some method to bypass this restrict, and one of the method is that encoding and decoding the string by payload.
+
+1. Find the offset
+2. start building rop_chain
+   > I choose add instruction to decode the string, so I need to encode the string by sub
+3. after pass the paramater to register, we can start decoding our string(file_name)
+   > because of bl register, we can only decode our string just one byte, so I write a generater to build a rop_chain that adding each byte of string one by one.
+4. Boom! we get the flag 
